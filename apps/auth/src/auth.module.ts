@@ -19,6 +19,7 @@ import { dataSourceOptions } from './db/data-source';
       useFactory: () => ({
         ...dataSourceOptions,
         autoLoadEntities: true,
+        synchronize: true,
       }),
       // useFactory: (configService: ConfigService) => ({
       //   type: 'postgres',
